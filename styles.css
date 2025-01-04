@@ -27,7 +27,12 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--background);
+    z-index: 100;
+    
 }
 
 header h1 {
@@ -56,6 +61,9 @@ main {
     margin-top: 4rem;
     padding: 2rem;
     background-color: var(--background);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-container {
@@ -84,3 +92,79 @@ main {
 .button:active {
     transform: scale(0.95);
 }
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.content {
+    max-width: 600px;
+    margin: 2rem auto;
+    line-height: 1.6;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+/* Base responsive styles */
+.code-search-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media screen and (max-width: 768px) {
+    .code-search-container {
+      padding: 0 10px;
+    }
+    
+    .search-results {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .search-results {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .search-results {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  .search-title {
+    font-size: 1.5rem;
+  }
+  
+  .search-description {
+    font-size: 1rem;
+  }
+  
