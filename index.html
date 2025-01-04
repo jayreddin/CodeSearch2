@@ -6,55 +6,40 @@
     <title>Error Code Search</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/gsap.min.js"></script>
-<script href="../script.js"></script> 
+    <script href="../script.js"></script> 
 </head>
-<body class="bg-white dark:bg-gray-100">
-    <header class="container mx-auto py-8 px-4 bg-white dark:bg-gray-100">
-        <h1 class="text-xl font-bold">Error Code Search</h1>
-        <div class="flex items-center space-x-4">
-            <button id="toggle-mode" class="btn border border-black dark:border-white bg-white dark:bg-gray-100 light-mode">
+<body>
+    <header>
+        <h1>Error Code Search</h1>
+        <div class="header-controls">
+            <button id="toggle-mode" class="btn">
                 <i class="fas fa-moon"></i>
             </button>
         </div>
     </header>
 
-    <main class="container mx-auto py-8 px-4 bg-white dark:bg-gray-100">
-        <section class="grid grid-cols-1 gap-4">
+    <main>
+        <section>
             <div class="text-center">
-                <div class="button-container flex flex-col space-y-2">
-                    <a href="buttons/joule_victorum.html" class="button border border-black dark:border-white">Joule Victorum</a>
-                    <a href="buttons/joule_samsung.html" class="button border border-black dark:border-white">Joule Samsung</a>
-                    <a href="buttons/joule_modular_air.html" class="button border border-black dark:border-white">Joule Modular Air</a>
-                    <a href="buttons/dedietrich_strateo.html" class="button border border-black dark:border-white">DeDietrich Strateo</a>
-                    <a href="buttons/lg_thermia.html" class="button border border-black dark:border-white">LG Thermia</a>
-                    <a href="buttons/hitachi_yutaki.html" class="button border border-black dark:border-white">Hitachi Yutaki</a>
-                    <a href="buttons/panasonic_aquarea.html" class="button border border-black dark:border-white">Panasonic Aquarea</a>
-                    <a href="buttons/grant_areona.html" class="button border border-black dark:border-white">Grant Areona</a>
-                    <a href="buttons/itec_thermia.html" class="button border border-black dark:border-white">Itec Thermia</a>
-                    <a href="buttons/button_11.html" class="button border border-black dark:border-white">Button 11</a>
-                    <a href="buttons/button_12.html" class="button border border-black dark:border-white">Button 12</a>
+                <div class="button-container">
+                    <a href="buttons/joule_victorum.html" class="button">Joule Victorum</a>
+                    <a href="buttons/joule_samsung.html" class="button">Joule Samsung</a>
+                    <a href="buttons/joule_modular_air.html" class="button">Joule Modular Air</a>
+                    <a href="buttons/dedietrich_strateo.html" class="button">DeDietrich Strateo</a>
+                    <a href="buttons/lg_thermia.html" class="button">LG Thermia</a>
+                    <a href="buttons/hitachi_yutaki.html" class="button">Hitachi Yutaki</a>
+                    <a href="buttons/panasonic_aquarea.html" class="button">Panasonic Aquarea</a>
+                    <a href="buttons/grant_areona.html" class="button">Grant Areona</a>
+                    <a href="buttons/itec_thermia.html" class="button">Itec Thermia</a>
+                    <a href="buttons/button_11.html" class="button">Button 11</a>
+                    <a href="buttons/button_12.html" class="button">Button 12</a>
                 </div>
             </div>
         </section>
     </main>
-
-    <script>
-       const toggleButton = document.getElementById('toggle-mode');
-       toggleButton.addEventListener('click', () => {
-           document.body.classList.toggle('dark-mode');
-           if (document.body.classList.contains('dark-mode')) {
-               toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
-               toggleButton.classList.remove('light-mode');
-               toggleButton.classList.add('dark-mode');
-           } else {
-               toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
-               toggleButton.classList.remove('dark-mode');
-               toggleButton.classList.add('light-mode');
-           }
-       });
-    </script>
+    <script src="darkmode.js"></script>
 </body>
 </html>
