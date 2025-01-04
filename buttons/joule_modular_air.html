@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joule Modular Air Error Codes</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <header class="container mx-auto py-4 px-8 flex items-center justify-between">
+        <a href="../index.html">
+            <button class="btn btn-outline">Home</button>
+        </a>
+        <div class="flex items-center space-x-4">
+            <button id="themeToggle" class="btn bg-gray-300 dark:bg-gray-700">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12 px-8">
+        <section class="grid grid-cols-1 gap-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Joule Modular Air Error Codes</h2>
+
+                <div class="mt-4">
+                    <p>This page is under construction and is meant to demonstrate the basic layout for each specific device.</p>
+                    <p>In the future, we will populate this page with a list of error codes specific to Joule Modular Air devices. </p>
+                    <p>Please check back later for updates!</p>
+                </div>
+           </div>
+        </section>
+    </main>
+
+    <script>
+       const themeToggle = document.getElementById('themeToggle');
+       themeToggle.addEventListener('click', () => {
+           document.body.classList.toggle('dark');
+           if (document.body.classList.contains('dark')) {
+               themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+           } else {
+               themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+           }
+       });
+
+    </script>
+</body>
+</html>

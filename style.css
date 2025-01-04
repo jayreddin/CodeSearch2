@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.dark-mode {
+    background-color: #2c2c2c; /* Updated to dark gray */
+    color: #fff;
+}
+
+.dark-mode .button {
+    border-color: #fff;
+    color: #fff;
+}
+
+.dark-mode .button:hover {
+    background-color: #444;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: inherit;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: inherit;
+}
+
+header .btn {
+    background-color: #e2e8f0;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .btn:hover {
+    background-color: #cbd5e0;
+}
+
+header .btn i {
+    font-size: 1rem;
+}
+
+header .btn.dark-mode {
+    background-color: #4a5568;
+    color: #e2e8f0;
+}
+
+header .btn.dark-mode:hover {
+    background-color: #2d3748;
+}
+
+header .btn.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+header .btn.light-mode:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    margin-top: 4rem; /* Adjust this value if needed to avoid overlap with the fixed header */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode main {
+    background-color: #333;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-mode main {
+    background-color: #fff;
+    color: #000;
+}
